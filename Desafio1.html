@@ -4,16 +4,26 @@
   </head>
   <body>
     <script>
-      var x = 1,
-        y = 2;
+      var endereco = {
+        rua: "Rua dos pinheiros",
+        numero: 1293,
+        bairro: "Centro",
+        cidade: "São Paulo",
+        uf: "SP"
+      };
 
-      function funcaoSoma(x, y) {
-        resultado = x + y;
-        return resultado;
-      }
-
-      console.log(resultado);
-      console.log("Não sei se o código acima funciona");
+      console.log(
+        "O usuário mora em " +
+          endereco.cidade +
+          " / " +
+          endereco.uf +
+          ", no bairro " +
+          endereco.bairro +
+          ", na rua " +
+          endereco.rua +
+          " com número " +
+          endereco.numero
+      );
     </script>
   </body>
 </html>
